@@ -18,7 +18,7 @@ export default async function HomePage() {
       <ThreeItemGrid />
       <Suspense>
         <Carousel />
-     <h1>Helloo World</h1>
+     
         <Suspense>
           <Footer />
         </Suspense>

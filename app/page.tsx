@@ -18,7 +18,7 @@ export default async function HomePage() {
       <ThreeItemGrid />
       <Suspense>
         <Carousel />
-        <p>hello world i am from my branch</p>
+        <p>hello world i am from my branch helloo</p>
         <Suspense>
           <Footer />
         </Suspense>

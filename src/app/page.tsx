@@ -1,3 +1,4 @@
+import { Button } from '@/components/ui/button';
 import { Carousel } from 'components/carousel';
 import { ThreeItemGrid } from 'components/grid/three-items';
 import Footer from 'components/layout/footer';
@@ -18,7 +19,8 @@ export default async function HomePage() {
       <ThreeItemGrid />
       <Suspense>
         <Carousel />
-     <h1>Helloo World</h1>
+        <h1 className="text-red-500">Hello World</h1>
+        <Button variant="outline">Shadcn</Button>
         <Suspense>
           <Footer />
         </Suspense>

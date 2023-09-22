@@ -20,7 +20,8 @@ export default async function HomePage() {
       <ThreeItemGrid />
       <Suspense>
         <Carousel />
-        <h1 className="text-red-500">Hello World</h1>
+        <h1 className="bg-main text-text">Hello World</h1>
+        <h1 className='bg-sub'>hellooo</h1>
         <Button variant="outline">Shadcn</Button>
         <Suspense>
           <Foter/>

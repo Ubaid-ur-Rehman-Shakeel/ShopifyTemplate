@@ -22,6 +22,7 @@ export default async function HomePage() {
         <h1 className="bg-main text-text">Hello World</h1>
         <h1 className='bg-sub'>hellooo</h1>
         <Button variant="outline">Shadcn</Button>
+        <p>hello I am Ubaid</p>
         <Suspense>
           <Footer />
         </Suspense>

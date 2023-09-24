@@ -1,8 +1,6 @@
 "use client"
 import Slider from "react-slick";
 import Slide from "./slide";
-import "slick-carousel/slick/slick.css"; 
-import "slick-carousel/slick/slick-theme.css";
 import { useTypewriter } from 'react-simple-typewriter';
 
 const Hero = () => {
@@ -48,7 +46,7 @@ const Hero = () => {
 
     return (
 
-            <div className='container lg:pt-0  lg:top'>
+            <div className='lg:pt-0  lg:top'>
                 <Slider {...settings}>
                     {slideData.map((item) => (
                         <Slide
@@ -56,7 +54,7 @@ const Hero = () => {
                             image={item.image}
                             showButton={item.showButton}
                             buttonText='Buy now!'
-                            buttonStyle='relative left-[22vw] mt-10 lg:left-[25vw]'
+                            buttonStyle='relative left-[22vw] mt-10 lg:left-[25vw] bg-sub outline-main text-text hover:bg-white hover:text-sub'
                             showText={item.showHeading}
                             text={text1}
                             heading='Urban Treasures'

@@ -31,8 +31,8 @@ export default function slide({ image, showButton, showText, buttonText, buttonS
             <div className={sectionStyle}>
 
                 {showText && (<div className={textStyle}>
-                    <h1 className='text-4xl lg:text-8xl md:text-6xl  font-semibold px-10 z-20 lg:ml-10 text-[#FFFFFF]'>{heading}</h1>
-                    <p className='text-2xl lg:text-5xl md:text-4xl font-semibold px-10 z-20 mt-5  lg:ml-10 text-[#FFFFFF]'>
+                    <h1 className='text-4xl lg:text-8xl md:text-6xl  font-semibold px-10 z-20 lg:ml-10 text-text'>{heading}</h1>
+                    <p className='text-2xl lg:text-5xl md:text-4xl font-semibold px-10 z-20 mt-5  lg:ml-10 text-text'>
                         <span className='mr-3'>{text}</span>
                         <Cursor cursorColor='white'></Cursor>
                     </p>

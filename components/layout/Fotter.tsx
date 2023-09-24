@@ -1,13 +1,14 @@
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { Facebook, SendHorizontal } from 'lucide-react';
+import { ChevronRight, Facebook, SendHorizontal } from 'lucide-react';
 import { BsFacebook } from 'react-icons/bs';
 import { AiFillTwitterCircle } from 'react-icons/ai';
 import { AiFillInstagram } from 'react-icons/ai';
+import Image from "next/image";
 
 export default function Foter() {
   return (
-    <main className='bg-main py-5'>
+    <main className='bg-main pt-5 mt-5'>
     <section className='grid grid-cols-1 xl:grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:flex justify-evenly mt-10 p-5 gap-10'>
 
       <div className="text-subsec">
@@ -36,27 +37,28 @@ export default function Foter() {
         <p>Privacy Policy</p>
       </div>
 
-      <div className="text-subsec">
-        <h3 className='text-xl font-semibold '>Join a Newslatter</h3>
+      <div className="bg-slate-500 pt-2 pb-16 px-4 rounded text-white">
+        <h3 className='text-xl font-semibold'>Join a Newslatter</h3>
         <div className="flex w-full max-w-sm items-center mt-3">
-          <Input type="email" placeholder="Email" className="w-auto"/>
-          <Button type="submit" className='bg-sub'><SendHorizontal strokeWidth={2} className='text-white '/></Button>
+          <Input type="email" placeholder="Email" className="w-auto rounded-l"/>
+          <Button type="submit" className='bg-yellow-500 rounded-r'><SendHorizontal strokeWidth={2} className='text-text'/></Button>
        </div>
     </div>
 
+
     </section>
 
-    <section className='sm:justify-between sm:flex-row flex flex-col xl:mx-16 mx-10 gap-3 mt-8 text-subsec'>
-        <p>©2023 Shoetopia Sneakers</p>
-
-        <div className='flex'>
-           <ul className="flex">
-            <li><BsFacebook size={25}/></li>
-            <li><AiFillTwitterCircle size={25}/></li>
-            <li><AiFillInstagram size={25}/></li>
+        <div className='flex gap-1 items-center xl:mx-16 mx-6 mt-5 text-subsec'>
+           <ul className="flex gap-1">
+            <li><BsFacebook size={18}/></li>
+            <li><AiFillTwitterCircle size={20}/></li>
+            <li><AiFillInstagram size={20}/></li>
             </ul>
-            <p className="text-xl">/ Shoetopia</p>
+            <p className="">/Shoetopia</p>
         </div>
+
+    <section className='mt-4 text-center py-2 bg-sub text-main'>  
+        <p>© 2023 Panaverse. All rights reserved</p>     
     </section>
 
     </main>

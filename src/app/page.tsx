@@ -25,7 +25,7 @@ export default async function HomePage() {
         <Button variant="outline">Shadcn</Button>
         <Suspense>
           <Foter/>
-          <Footer />
+          <Footer/>
         </Suspense>
       </Suspense>
     </>

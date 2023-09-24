@@ -21,6 +21,7 @@ export default async function HomePage() {
       <Suspense>
         <Carousel />
         <h1 className="bg-main text-text">Hello World</h1>
+        <h1 className='bg-sub'>hellooo</h1>
         <Button variant="outline">Shadcn</Button>
         <CustomerReview />
         <Suspense>

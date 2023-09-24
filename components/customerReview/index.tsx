@@ -24,10 +24,10 @@ const CustomerReview = () => {
     <section>
       <div className="bg-gray-100 py-10">
         <div className="text-center">
-          <h3 className="mb-6 text-3xl font-bold">Customer Reviews </h3>
+          <h3 className="mb-6 text-3xl font-bold">Customer Reviews</h3>
         </div>
 
-        <div className="gap-6 px-12 text-center md:grid-cols-3 lg:gap-12">
+        <div className="px-5 text-center md:px-12">
           <Swiper
             effect={'coverflow'}
             grabCursor={true}
@@ -67,13 +67,13 @@ const CustomerReview = () => {
             className="mySwiper"
           >
             {reviewData.map((item) => (
-              <SwiperSlide>
-                <div className="rounded-xl bg-white p-6 shadow-md" key={item.id}>
+              <SwiperSlide key={item.id}>
+                <div className="rounded-xl bg-white p-6 shadow-md">
                   <div className="mb-6 flex justify-center">
                     <img src={item.image} className="h-32 w-32 rounded-full shadow-lg" />
                   </div>
                   <h5 className="text-xl font-semibold text-main">{item.name}</h5>
-                  <h6 className="mb-4 font-semibold">{item.deignation}</h6>
+                  <h6 className="mb-4 font-semibold">{item.designation}</h6>
                   <p>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"

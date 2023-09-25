@@ -1,7 +1,7 @@
 "use client"
+import { useTypewriter } from 'react-simple-typewriter';
 import Slider from "react-slick";
 import Slide from "./slide";
-import { useTypewriter } from 'react-simple-typewriter';
 
 const Hero = () => {
     const settings = {
@@ -10,7 +10,7 @@ const Hero = () => {
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed:12000,
+        autoplaySpeed:5000,
         pauseOnHover: false,
         arrows:false
     };

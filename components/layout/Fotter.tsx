@@ -37,18 +37,10 @@ export default function Foter() {
         <p>Privacy Policy</p>
       </div>
 
-      <div className="bg-slate-500 pt-2 pb-16 px-4 rounded text-white">
-        <h3 className='text-xl font-semibold'>Join a Newslatter</h3>
-        <div className="flex w-full max-w-sm items-center mt-3">
-          <Input type="email" placeholder="Email" className="w-auto rounded-l"/>
-          <Button type="submit" className='bg-yellow-500 rounded-r'><SendHorizontal strokeWidth={2} className='text-text'/></Button>
-       </div>
-    </div>
-
 
     </section>
 
-        <div className='flex gap-1 items-center xl:mx-16 mx-6 mt-5 text-subsec'>
+        <div className='flex gap-1 items-center lg:mx-32 mx-6 mt-5 text-subsec'>
            <ul className="flex gap-1">
             <li><BsFacebook size={18}/></li>
             <li><AiFillTwitterCircle size={20}/></li>

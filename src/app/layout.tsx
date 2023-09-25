@@ -1,6 +1,6 @@
 import Navbar from 'components/layout/navbar';
 import { ensureStartsWith } from 'lib/utils';
-import { Roboto } from 'next/font/google';
+import { Poppins, Roboto } from 'next/font/google';
 import { ReactNode, Suspense } from 'react';
 import './globals.css';
 
@@ -32,14 +32,17 @@ export const metadata = {
 };
 
 const roboto = Roboto({
-  weight: ["100","300", "400", "500" ,"700", "900"],
-  subsets: ["latin"],
+  weight: ['100', '300', '400', '500', '700', '900'],
+  subsets: ['latin']
 });
-
+const poppins = Poppins({
+  weight: ['100', '300', '400', '500', '700', '900'],
+  subsets: ['latin']
+});
 
 export default async function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang="en" >
+    <html lang="en">
       <body className={roboto.className}>
         <Navbar />
         <Suspense>

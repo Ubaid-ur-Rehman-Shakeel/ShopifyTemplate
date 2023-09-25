@@ -1,5 +1,6 @@
 import { Button } from '@/components/ui/button';
 import { Carousel } from 'components/carousel';
+import CustomerReview from 'components/customerReview';
 import { ThreeItemGrid } from 'components/grid/three-items';
 <<<<<<< HEAD
 import Foter from 'components/layout/Fotter';
@@ -28,6 +29,7 @@ export default async function HomePage() {
         <h1 className="bg-main text-text">Hello World</h1>
         <h1 className='bg-sub'>hellooo</h1>
         <Button variant="outline">Shadcn</Button>
+        <CustomerReview />
         <Suspense>
           <Foter/>
           <Footer/>

@@ -9,7 +9,7 @@ import Image from "next/image";
 export default function Foter() {
   return (
     <main className='bg-main pt-5 mt-5'>
-    <section className='grid grid-cols-1 xl:grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:flex justify-evenly mt-10 p-5 gap-10'>
+    <section className='grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 lg:flex justify-evenly mt-10 p-5 gap-10'>
 
       <div className="text-subsec">
         <h2 className='text-2xl font-bold'>Shoetopia</h2>

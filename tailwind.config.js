@@ -12,22 +12,33 @@ module.exports = {
       center: true,
       padding: '2rem',
       screens: {
-        logo: "1076px",
+<<<<<<< HEAD
         xs: '475px',
         sm: "500px",
         md: "769px",
         lg: "1025px",
         "xl-lg": "1100px",
-        xl: "440px",
+        xl: "1350px",
         "2xl": "1535px",
       },
+=======
+        xs: '500px',
+        sm: '639px',
+        md: '769px',
+        lg: '1025px',
+        'xl-lg': '1100px',
+        xl: '1350px',
+        '2xl': '1535px'
+      }
+>>>>>>> ee88379256d7388d6c8a997b1364347687b09412
     },
     extend: {
       colors: {
-        main: "#003060",
-        sub: "#68BBE3",
-        text:"#FFFFFF",
-        subsec:"#D3D3D3"
+        main: '#003060',
+        sub: '#68BBE3',
+        text: '#FFFFFF',
+        subsec: '#D3D3D3',
+        lightsec: '#e8e4e3'
       },
       borderRadius: {
         lg: 'var(--radius)',

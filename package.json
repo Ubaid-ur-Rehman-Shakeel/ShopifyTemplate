@@ -24,9 +24,14 @@
   "dependencies": {
     "@headlessui/react": "^1.7.15",
     "@heroicons/react": "^2.0.18",
+    "@radix-ui/react-separator": "^1.0.3",
     "@radix-ui/react-slot": "^1.0.2",
+    "@radix-ui/react-switch": "^1.0.3",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.0.0",
+    "input": "^1.0.1",
+    "js-cookie": "^3.0.5",
+    "label": "^0.2.2",
     "lucide-react": "^0.279.0",
     "next": "13.4.6",
     "react": "18.2.0",
@@ -37,7 +42,12 @@
     "react-simple-typewriter": "^5.0.1",
     "react-slick": "^0.29.0",
     "slick-carousel": "^1.8.1",
+<<<<<<< HEAD
 >>>>>>> 235fc83cc7d8f80f62c8a42bc35a203de8cbb0d2
+=======
+    "select": "^1.1.2",
+    "swiper": "^10.3.0",
+>>>>>>> ee88379256d7388d6c8a997b1364347687b09412
     "tailwind-merge": "^1.14.0",
     "tailwindcss-animate": "^1.0.7"
   },

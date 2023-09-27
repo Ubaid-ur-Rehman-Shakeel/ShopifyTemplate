@@ -22,9 +22,10 @@ function generateStarRatingArray(rating: number) {
 const CustomerReview = () => {
   return (
     <section>
-      <div className="bg-gray-100 py-10">
+      <div className="bg-gray-100 py-20">
         <div className="text-center">
-          <h3 className="mb-6 text-3xl font-bold">Customer Reviews</h3>
+          <p className="text-xl text-subsec">What People Say</p>
+          <h3 className="mb-10 text-3xl font-bold text-main">Customer Reviews</h3>
         </div>
 
         <div className="px-5 text-center md:px-12">

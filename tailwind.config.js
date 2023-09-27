@@ -26,7 +26,8 @@ module.exports = {
         main: '#003060',
         sub: '#68BBE3',
         text: '#FFFFFF',
-        subsec: '#D3D3D3',
+        // subsec: '#D3D3D3',
+        subsec: '#6b7280', //edited by rizwan
         lightsec: '#e8e4e3'
       },
       borderRadius: {

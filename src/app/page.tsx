@@ -6,6 +6,7 @@ import CustomerReview from 'components/customerReview';
 import { ThreeItemGrid } from 'components/grid/three-items';
 import Footer from 'components/layout/footer';
 import { Suspense } from 'react';
+import Faqs from './contact/Faqs';
 
 export const runtime = 'edge';
 

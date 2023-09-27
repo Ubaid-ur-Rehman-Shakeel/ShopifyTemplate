@@ -1,10 +1,8 @@
 "use client";
-import Image from "next/image";
-import React from "react";
+import { Button } from "@/components/ui/button";
 import { useFormik } from "formik";
-import { Button } from "@/components/ui/button"
-import {FaqThree} from "./Faq"
-import shoes from "../../../public/shoes.jpg";
+import Image from "next/image";
+import sneaker from "../../../public/sneaker.jpg";
 
 export default function Section() {
   const formik = useFormik({
@@ -24,7 +22,7 @@ export default function Section() {
     <main className="bg-gray-100 h-screen w-full flex justify-center items-center md:-mt-20 pt-10">
       <div className="bg-text w-full md:mx-10 mx-3 flex flex-col md:flex-row shadow-slate-200 shadow-x-lg">
         <section className="md:mx-32 md:-mt-3 mb-3 mx-3">
-          <Image src={shoes} alt="image" width={400} height={200} />
+          <Image src={sneaker} alt="image" width={600} height={1200} />
         </section>
         <section className="md:w-full mx-3">
           <h1 className="mt-12 text-3xl font-bold">Get in Touch with Us</h1>

@@ -5,11 +5,11 @@ const index = () => {
     <section>
       <div className="pb-10">
         <div className="flex items-center justify-center">
-          <div className="w-full px-4 py-12 2xl:container sm:px-6 xl:px-20 2xl:mx-auto 2xl:px-0">
+          <div className="w-full px-5 py-12 2xl:container sm:px-6 xl:px-20 2xl:mx-auto 2xl:px-0">
             <div className="jusitfy-center flex flex-col items-center">
               <div className="mb-2 flex flex-col items-center justify-center md:mb-10">
-                <p className="text-xl text-subsec">Shop by</p>
-                <h3 className="text-3xl font-semibold text-main">Category</h3>
+                <p className="text-lg text-subsec md:text-xl">Shop by</p>
+                <h3 className="text-2xl font-semibold text-main md:text-3xl">Category</h3>
               </div>
               <div className="grid w-full grid-cols-1 md:grid-cols-3 md:gap-x-8">
                 <div className="mt-4 flex flex-col space-y-4 md:mt-0 md:space-y-8">

@@ -1,10 +1,10 @@
-import { Button } from '@/components/ui/button';
 import Hero from 'components/Hero/hero';
+import BestSellingProducts from 'components/bestSellingProducts';
 import { Carousel } from 'components/carousel';
 import CategorySection from 'components/categorySection';
 import CustomerReview from 'components/customerReview';
 import { ThreeItemGrid } from 'components/grid/three-items';
-import Footer from 'components/layout/footer';
+// import Footer from 'components/layout/footer';
 import { Suspense } from 'react';
 
 export const runtime = 'edge';
@@ -23,13 +23,10 @@ export default async function HomePage() {
       <ThreeItemGrid />
       <Suspense>
         <Carousel />
-        <h1 className="bg-main text-text">Hello World</h1>
-        <Button variant="outline">Shadcn</Button>
+        <BestSellingProducts />
         <CategorySection />
         <CustomerReview />
-        <Suspense>
-          <Footer />
-        </Suspense>
+        <Suspense>{/* <Footer /> */}</Suspense>
       </Suspense>
     </>
   );

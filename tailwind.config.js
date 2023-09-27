@@ -28,7 +28,7 @@ module.exports = {
         text: '#FFFFFF',
         // subsec: '#D3D3D3',
         subsec: '#6b7280', //edited by rizwan
-        lightsec: '#e8e4e3'
+        lightsec: '#F5F5F5'
       },
       borderRadius: {
         lg: 'var(--radius)',
@@ -51,5 +51,5 @@ module.exports = {
       }
     }
   },
-  plugins: [require('tailwindcss-animate')]
+  plugins: [require('tailwindcss-animate'), require('@tailwindcss/aspect-ratio')]
 };

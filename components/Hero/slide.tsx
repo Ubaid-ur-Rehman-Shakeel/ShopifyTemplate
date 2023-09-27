@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import Image from 'next/image';
 import { Button } from "@/components/ui/button";
 import Link from 'next/link';
@@ -11,28 +12,33 @@ interface propsType {
     buttonStyle?: string;
     buttonLink?: string;
     text?: string;
-    heading?:string;
+    heading?: string;
     textStyle?: string;
     sectionStyle?: string;
+    headingStyle?: string;
+
 
 }
 
-export default function slide({ image, showButton, showText, buttonText, buttonStyle, buttonLink, text, textStyle, sectionStyle,heading }: propsType) {
+export default function Slide({ image, showButton, showText, buttonText, buttonStyle, buttonLink, text, headingStyle, textStyle, sectionStyle, heading }: propsType) {
     return (
-        <div className="relative w-[100vw] h-[80vh] ">
+        <div className="relative w-[100vw] h-[40vh] md:h-[80vh]">
             <Image
-                className="h-full w-full rounded-xl  object-right md:h-auto md:object-left-bottom shrink-0"
+                className="w-[100%] md:object-fill rounded-xl h-[100%] "
                 src={image}
                 alt="banner"
-                fill
                 sizes='100vw'
+                width={100}
+                height={100}
             />
+
+
 
             <div className={sectionStyle}>
 
-                {showText && (<div className={textStyle}>
-                    <h1 className='text-4xl lg:text-8xl md:text-6xl  font-semibold px-10 z-20 lg:ml-10 text-text'>{heading}</h1>
-                    <p className='text-2xl lg:text-5xl md:text-4xl font-semibold px-10 z-20 mt-5  lg:ml-10 text-text'>
+                {showText && (<div>
+                    <h1 className={headingStyle}>{heading}</h1>
+                    <p className={textStyle}>
                         <span className='mr-3'>{text}</span>
                         <Cursor cursorColor='white'></Cursor>
                     </p>

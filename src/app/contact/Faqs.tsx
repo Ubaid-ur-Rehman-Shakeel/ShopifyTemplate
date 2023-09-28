@@ -3,7 +3,7 @@ import React,{useState} from "react";
 import { ChevronUp, ChevronDown } from 'lucide-react'
 
 
-export default function Faqs({ que }) {
+export default function Faqs({ que }:any ) {
   const [isOpen, setIsOpen] = useState(false);
 
   const onclick = () => {

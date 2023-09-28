@@ -3,8 +3,8 @@ import { useTransition } from 'react';
 
 import { MinusIcon, PlusIcon } from '@heroicons/react/24/outline';
 import clsx from 'clsx';
-import { removeItem, updateItemQuantity } from 'components/cart/actions';
-import LoadingDots from 'components/loading-dots';
+import { removeItem, updateItemQuantity } from '@/components/cart/actions';
+
 import type { CartItem } from 'lib/shopify/types';
 
 export default function EditItemQuantityButton({
@@ -49,7 +49,7 @@ export default function EditItemQuantityButton({
       )}
     >
       {isPending ? (
-        <LoadingDots className="bg-black dark:bg-white" />
+        ""
       ) : type === 'plus' ? (
         <PlusIcon className="h-4 w-4 dark:text-neutral-500" />
       ) : (

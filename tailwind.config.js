@@ -3,7 +3,7 @@ module.exports = {
   darkMode: ['class'],
   content: [
     './pages/**/*.{ts,tsx}',
-    './components/**/*.{ts,tsx}',
+    './@/components/**/*.{ts,tsx}',
     './app/**/*.{ts,tsx}',
     './src/**/*.{ts,tsx}'
   ],
@@ -23,8 +23,8 @@ module.exports = {
     },
     extend: {
       colors: {
-        main: '#003060',
-        sub: '#68BBE3',
+        main: "#031335",
+        sub: "#FFAE50",
         text: '#FFFFFF',
         // subsec: '#D3D3D3',
         subsec: '#6b7280', //edited by rizwan

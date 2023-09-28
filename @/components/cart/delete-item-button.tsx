@@ -1,9 +1,9 @@
 import { XMarkIcon } from '@heroicons/react/24/outline';
-import LoadingDots from 'components/loading-dots';
+
 import { useRouter } from 'next/navigation';
 
 import clsx from 'clsx';
-import { removeItem } from 'components/cart/actions';
+import { removeItem } from '@/components/cart/actions';
 import type { CartItem } from 'lib/shopify/types';
 import { useTransition } from 'react';
 
@@ -35,7 +35,7 @@ export default function DeleteItemButton({ item }: { item: CartItem }) {
       )}
     >
       {isPending ? (
-        <LoadingDots className="bg-white" />
+        ""
       ) : (
         <XMarkIcon className="hover:text-accent-3 mx-[1px] h-4 w-4 text-white dark:text-black" />
       )}

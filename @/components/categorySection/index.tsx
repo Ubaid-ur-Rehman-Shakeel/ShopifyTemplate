@@ -8,7 +8,7 @@ const index = () => {
           <div className="w-full px-4 py-12 2xl:container sm:px-6 xl:px-20 2xl:mx-auto 2xl:px-0">
             <div className="jusitfy-center flex flex-col items-center">
               <div className="mb-2 flex flex-col items-center justify-center md:mb-10">
-                <p className="text-xl text-subsec">Shop by</p>
+                <p className="text-xl text-sub">Shop by</p>
                 <h3 className="text-3xl font-semibold text-main">Category</h3>
               </div>
               <div className="grid w-full grid-cols-1 md:grid-cols-3 md:gap-x-8">
@@ -74,7 +74,7 @@ const index = () => {
               </div>
             </div>
             <div className="mt-7 flex justify-center md:mt-10">
-              <Button className="w-36 bg-main py-3 text-base font-medium leading-none text-text hover:bg-white hover:text-main hover:outline hover:outline-2 hover:outline-offset-2 hover:outline-sub  focus:text-sub focus:outline-none">
+              <Button className="w-36 bg-sub py-3 text-base font-medium leading-none text-text hover:bg-white hover:text-main hover:outline hover:outline-2 hover:outline-offset-2 hover:outline-sub  focus:text-sub focus:outline-none">
                 Explore More
               </Button>
             </div>

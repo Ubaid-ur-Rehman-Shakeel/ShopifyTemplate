@@ -25,7 +25,8 @@ module.exports = {
       colors: {
         main: "#031335",
         sub: "#FFAE50",
-        subsec: '#D8D8D8',
+        subsec: '#F5F5F5', //edited by rizwan
+        // subsec: '#D8D8D8',
       },
       borderRadius: {
         lg: 'var(--radius)',
@@ -48,5 +49,7 @@ module.exports = {
       }
     }
   },
-  plugins: [require('tailwindcss-animate')]
+  plugins: [
+    require('tailwindcss-animate'),
+  require('@tailwindcss/aspect-ratio')]
 };

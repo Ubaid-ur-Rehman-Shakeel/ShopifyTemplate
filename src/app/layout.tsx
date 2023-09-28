@@ -35,10 +35,7 @@ const roboto = Roboto({
   weight: ['100', '300', '400', '500', '700', '900'],
   subsets: ['latin']
 });
-const poppins = Poppins({
-  weight: ['100', '300', '400', '500', '700', '900'],
-  subsets: ['latin']
-});
+
 
 export default async function RootLayout({ children }: { children: ReactNode }) {
   return (

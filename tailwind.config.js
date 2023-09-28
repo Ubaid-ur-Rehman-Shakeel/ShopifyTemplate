@@ -25,10 +25,7 @@ module.exports = {
       colors: {
         main: "#031335",
         sub: "#FFAE50",
-        text: '#FFFFFF',
-        // subsec: '#D3D3D3',
-        subsec: '#6b7280', //edited by rizwan
-        lightsec: '#e8e4e3'
+        subsec: '#D8D8D8',
       },
       borderRadius: {
         lg: 'var(--radius)',

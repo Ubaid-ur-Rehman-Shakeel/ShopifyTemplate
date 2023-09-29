@@ -1,3 +1,4 @@
+import BannerSection from '@/components/Banner';
 import BestSellingProducts from '@/components/bestSellingProducts';
 import WhyChooseUs from '@/components/whychooseus';
 import Hero from '../../@/components/Hero/hero';
@@ -10,6 +11,7 @@ export default async function HomePage() {
       <Hero />        
         <BestSellingProducts/>
         <CategorySection />
+        <BannerSection/>        
         <CustomerReview />
         <WhyChooseUs/>
     </>

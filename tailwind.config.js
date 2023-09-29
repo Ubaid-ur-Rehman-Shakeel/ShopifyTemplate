@@ -20,6 +20,9 @@ module.exports = {
         xl: '1350px',
         '2xl': '1535px'
       }
+    }, 
+    backgroundImage: {
+      'home-banner': "url('/public/home-banner.jpg')",
     },
     extend: {
       colors: {

@@ -26,9 +26,9 @@ module.exports = {
     },
     extend: {
       colors: {
-        main: "#031335",
-        sub: "#FFAE50",
-        subsec: '#F5F5F5', //edited by rizwan
+        black: "#000000",
+        white: "#fffff",
+        gray: '#D3D3D3', //edited by rizwan
         // subsec: '#D8D8D8',
       },
       borderRadius: {

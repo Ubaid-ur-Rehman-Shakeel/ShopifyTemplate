@@ -1,13 +1,9 @@
-import { Button } from "@/components/ui/button";
-import { ChevronRight, Facebook, SendHorizontal } from 'lucide-react';
+import { AiFillInstagram, AiFillTwitterCircle } from 'react-icons/ai';
 import { BsFacebook } from 'react-icons/bs';
-import { AiFillTwitterCircle } from 'react-icons/ai';
-import { AiFillInstagram } from 'react-icons/ai';
-import Image from "next/image";
 
 export default function Foter() {
   return (
-    <main className='bg-main pt-5 mt-5'>
+    <main className='bg-main pt-5 mt-5 bg-black text-white'>
     <section className='grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 lg:flex justify-evenly mt-10 p-5 gap-10'>
 
       <div className="text-subsec">

@@ -28,7 +28,7 @@ const CustomerReview = () => {
           <h3 className="mb-10 text-3xl font-bold text-main">Customer Reviews</h3>
         </div>
 
-        <div className="px-5 text-center md:px-12">
+        <div className="px-5 text-center md:px-12 ">
           <Swiper
             effect={'coverflow'}
             grabCursor={true}
@@ -69,7 +69,7 @@ const CustomerReview = () => {
           >
             {reviewData.map((item) => (
               <SwiperSlide key={item.id}>
-                <div className="rounded-xl bg-white p-6 shadow-md">
+                <div className="rounded-xl bg-white p-6 shadow-md bg-gray text-black">
                   <div className="mb-6 flex justify-center">
                     <img src={item.image} className="h-32 w-32 rounded-full shadow-lg" />
                   </div>

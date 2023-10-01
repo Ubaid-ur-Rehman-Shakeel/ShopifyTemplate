@@ -14,6 +14,7 @@ export default async function HomePage() {
         <BannerSection/>        
         <CustomerReview />
         <WhyChooseUs/>
+        <h1>hello World</h1>
     </>
   );
 }

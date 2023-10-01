@@ -26,7 +26,7 @@ function generateStarRatingArray(rating: number) {
 
 const BestSellingProducts = () => {
   return (
-    <section className="bg-subsec px-3 py-20 md:px-12">
+    <section id="best-sellers" className="bg-subsec px-3 py-20 md:px-12">
       <div className="text-center">
         <p className="text-lg text-sub md:text-xl">Check Our</p>
         <h3 className="mb-7 text-2xl font-bold text-main md:mb-10 md:text-3xl">

@@ -4,7 +4,7 @@ import WhyChooseUs from '@/components/whychooseus';
 import Hero from '../../@/components/Hero/hero';
 import CategorySection from '../../@/components/categorySection';
 import CustomerReview from '../../@/components/customerReview';
-
+import {Carousel} from './carousel/carousel';
 export default async function HomePage() {
   return (
     <>
@@ -14,6 +14,7 @@ export default async function HomePage() {
         <BannerSection/>        
         <CustomerReview />
         <WhyChooseUs/>
+        <Carousel/>
     </>
   );
 }

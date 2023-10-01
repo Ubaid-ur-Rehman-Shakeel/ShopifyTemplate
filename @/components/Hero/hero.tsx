@@ -84,7 +84,7 @@ const Hero = () => {
 
     return (
 
-        <div id="hero" className='lg:pt-0  lg:top'>
+        <div  className='lg:pt-0  lg:top'>
             <Slider {...settings}>
                 {slideData.map((item) => (
                     <Slide

@@ -25,12 +25,12 @@ export const metadata = {
   },
   ...(twitterCreator &&
     twitterSite && {
-      twitter: {
-        card: 'summary_large_image',
-        creator: twitterCreator,
-        site: twitterSite
-      }
-    })
+    twitter: {
+      card: 'summary_large_image',
+      creator: twitterCreator,
+      site: twitterSite
+    }
+  })
 };
 
 const roboto = Roboto({
@@ -44,8 +44,9 @@ export default async function RootLayout({ children }: { children: ReactNode }) 
     <html lang="en">
       <body className={roboto.className}>
         <Navbar />
-          <main>{children}</main>
-          <Footer/>
+
+        <main className='w-full max-w-[1600px] mx-auto'>{children}</main>
+        <Footer />
       </body>
     </html>
   );

@@ -11,12 +11,14 @@ const index = () => {
                 <p className="text-xl text-sub">Shop by</p>
                 <h3 className="text-3xl font-semibold text-main">Category</h3>
               </div>
-              <div className="grid w-full grid-cols-1 md:grid-cols-3 md:gap-x-8">
-                <div className="mt-4 flex flex-col space-y-4 md:mt-0 md:space-y-8">
-                  <div className="group relative flex h-full w-full items-center justify-center">
+              <div className="grid w-full grid-cols-1 md:grid-cols-3 md:gap-x-8 ">
+
+                <div className="mt-4 flex flex-col space-y-4 md:mt-0 md:space-y-8 ">
+
+                  <div className="group relative flex h-full w-full max-h-[20rem] lg:max-w-[30rem] items-center justify-center">
                     <img
                       className="h-80 w-full object-cover object-center"
-                      src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c2hvZXN8ZW58MHx8MHx8fDA%3D&w=1000&q=80"
+                      src="https://images.unsplash.com/photo-1608231387042-66d1773070a5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80"
                       alt="shoe-image"
                     />
                     <Button className="absolute bottom-4 z-10 w-36 bg-[#ffffff] shadow-md py-3 text-base font-medium leading-none text-main focus:text-subsec focus:outline-none focus:ring-2 focus:ring-offset-2">
@@ -24,22 +26,26 @@ const index = () => {
                     </Button>
                     <div className="absolute bottom-3 z-0 w-36 bg-[#ffffff] shadow-md bg-opacity-50 px-20 py-6 opacity-0 transition duration-500 group-hover:opacity-40" />
                   </div>
-                  <div className="group relative flex h-full w-full items-center justify-center">
+
+                  <div className="group relative flex h-full w-full max-h-[20rem] lg:max-w-[30rem] items-center justify-center">
                     <img
                       className="h-80 w-full object-cover object-center"
-                      src="https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8c2hvZXN8ZW58MHx8MHx8fDA%3D&w=1000&q=80"
+                      src="https://images.unsplash.com/photo-1600269452121-4f2416e55c28?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=765&q=80"
                       alt="watch-image"
                     />
                     <Button className="absolute bottom-4 z-10 w-36 bg-[#ffffff] shadow-md py-3 text-base font-medium leading-none text-main focus:text-subsec focus:outline-none focus:ring-2 focus:ring-offset-2">
-                      Shoess
+                      Shoes
                     </Button>
                     <div className="absolute bottom-3 z-0 w-36 bg-[#ffffff] shadow-md bg-opacity-50 px-20 py-6 opacity-0 transition duration-500 group-hover:opacity-40" />
                   </div>
+
                 </div>
-                <div className="group relative mt-4 flex h-full w-full items-center justify-center md:mt-0">
+
+
+                <div className="group relative mt-4 flex h-full w-full lg:max-h-[42rem]  lg:max-w-[30rem] items-center justify-center md:mt-0 ">
                   <img
                     className="h-full w-full object-cover object-center"
-                    src="https://images.pexels.com/photos/2529148/pexels-photo-2529148.jpeg?cs=srgb&dl=pexels-melvin-buezo-2529148.jpg&fm=jpg"
+                    src="https://images.unsplash.com/photo-1534565337397-2a97f4e093b0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=654&q=80"
                     alt="girl-image"
                   />
                   <Button className="absolute bottom-4 z-10 w-36 bg-[#ffffff] shadow-md py-3 text-base font-medium leading-none text-main focus:text-subsec focus:outline-none focus:ring-2 focus:ring-offset-2">
@@ -47,11 +53,14 @@ const index = () => {
                   </Button>
                   <div className="absolute bottom-3 z-0 w-36 bg-[#ffffff] shadow-md bg-opacity-50 px-20 py-6 opacity-0 transition duration-500 group-hover:opacity-40" />
                 </div>
-                <div className="mt-8 flex flex-col space-y-4 md:mt-0 md:space-y-8">
-                  <div className="group relative flex h-full w-full items-center justify-center">
+
+
+                <div className="mt-8 flex flex-col space-y-4 md:mt-0 md:space-y-8 ">
+
+                  <div className="group relative flex h-full w-full max-h-[20rem] lg:max-w-[30rem] items-center justify-center">
                     <img
                       className="h-full w-full object-cover object-center"
-                      src="https://images.pexels.com/photos/1456706/pexels-photo-1456706.jpeg?cs=srgb&dl=pexels-ray-piedra-1456706.jpg&fm=jpg"
+                      src="https://images.unsplash.com/photo-1608379894453-c6b729b05596?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
                       alt="shoe-image"
                     />
                     <Button className="absolute bottom-4 z-10 w-36 bg-[#ffffff] shadow-md py-3 text-base font-medium leading-none text-main focus:text-subsec focus:outline-none focus:ring-2 focus:ring-offset-2">
@@ -59,10 +68,11 @@ const index = () => {
                     </Button>
                     <div className="absolute bottom-3 z-0 w-36 bg-[#ffffff] shadow-md bg-opacity-50 px-20 py-6 opacity-0 transition duration-500 group-hover:opacity-40" />
                   </div>
-                  <div className="group relative flex h-full w-full items-center justify-center">
+
+                  <div className="group relative flex h-full w-full max-h-[20rem] lg:max-w-[30rem] items-center justify-center">
                     <img
                       className="h-full w-full object-cover object-center"
-                      src="https://cdn.sanity.io/images/c1chvb1i/production/ced76eeeb7efdd1726fad1becc2bd968289ce4bd-1100x735.jpg"
+                      src="https://images.unsplash.com/photo-1543508282-6319a3e2621f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=715&q=80"
                       alt="watch-image"
                     />
                     <Button className="absolute bottom-4 z-10 w-36 bg-[#ffffff] shadow-md py-3 text-base font-medium leading-none text-main focus:text-subsec focus:outline-none focus:ring-2 focus:ring-offset-2">
@@ -70,6 +80,7 @@ const index = () => {
                     </Button>
                     <div className="absolute bottom-3 z-0 w-36 bg-[#ffffff] shadow-md bg-opacity-50 px-20 py-6 opacity-0 transition duration-500 group-hover:opacity-40" />
                   </div>
+
                 </div>
               </div>
             </div>

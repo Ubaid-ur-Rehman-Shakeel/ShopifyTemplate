@@ -35,9 +35,9 @@ export default function MobileMenu({ menu }: { menu: Menu[] }) {
       <button
         onClick={openMobileMenu}
         aria-label="Open mobile menu"
-        className="flex h-11 w-11 items-center justify-center rounded-md border border-neutral-200 text-black transition-colors dark:border-neutral-700 dark:text-white md:hidden"
+        className={` flex h-11 w-11 items-center justify-center rounded-md border border-neutral-200 text-black transition-colors dark:border-neutral-700 dark:text-white md:hidden`}
       >
-        <Bars3Icon className="h-4" />
+        {!isOpen ? <Bars3Icon className="h-4" /> : ""}
       </button>
       <Transition show={isOpen}>
         <Dialog onClose={closeMobileMenu} className="relative z-50">
@@ -45,9 +45,9 @@ export default function MobileMenu({ menu }: { menu: Menu[] }) {
             as={Fragment}
             enter="transition-all ease-in-out duration-300"
             enterFrom="opacity-0 backdrop-blur-none"
-            enterTo="opacity-100 backdrop-blur-[.5px]"
+            enterTo="opacity-100 backdrop-blur-[4px]"
             leave="transition-all ease-in-out duration-200"
-            leaveFrom="opacity-100 backdrop-blur-[.5px]"
+            leaveFrom="opacity-100 backdrop-blur-[0.5px]"
             leaveTo="opacity-0 backdrop-blur-none"
           >
             <div className="fixed inset-0 bg-black/30" aria-hidden="true" />
@@ -88,6 +88,34 @@ export default function MobileMenu({ menu }: { menu: Menu[] }) {
                     ))}
                   </ul>
                 ) : null}
+
+                <ul className='w-full flex flex-col justify-center items-center'>
+                  <li className='w-full p-2 text-lg font-semibold text-[#ffffff]/90 shadow-lg border-t-[1px] border-gray'>
+                    <Link href="/" className='w-fit hit hover:underline'>
+                      Home
+                    </Link>
+                  </li>
+                  <li className='w-full p-2 text-lg font-semibold text-[#ffffff]/90 shadow-lg border-t-[1px] border-gray'>
+                    <Link href="#best-sellers" className='w-fit h-fit hover:underline'>
+                      Best Products
+                    </Link>
+                  </li>
+                  <li className='w-full p-2 text-lg font-semibold text-[#ffffff]/90 shadow-lg border-t-[1px] border-gray'>
+                    <Link href="#category" className='w-fit h-fit hover:underline'>
+                      Category
+                    </Link>
+                  </li>
+                  <li className='w-full p-2 text-lg font-semibold text-[#ffffff]/90 shadow-lg border-t-[1px] border-gray'>
+                    <Link href="#customer" className='w-fit h-fit hover:underline'>
+                      Customer Reviews
+                    </Link>
+                  </li>
+                  <li className='w-full p-2 text-lg font-semibold text-[#ffffff]/90 shadow-lg border-y-[1px] border-gray'>
+                    <Link href="#why-choose-us" className='w-fit h-fit hover:underline'>
+                      Why Choose Us?
+                    </Link>
+                  </li>
+                </ul>
               </div>
             </Dialog.Panel>
           </Transition.Child>

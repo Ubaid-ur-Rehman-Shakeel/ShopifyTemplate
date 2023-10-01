@@ -7,13 +7,13 @@ import CustomerReview from '../../@/components/customerReview';
 
 export default async function HomePage() {
   return (
-    <>
-      <Hero />        
-        <BestSellingProducts/>
-        <CategorySection />
-        <BannerSection/>        
-        <CustomerReview />
-        <WhyChooseUs/>
-    </>
+    <div id="home">
+      <Hero />
+      <BestSellingProducts />
+      <CategorySection />
+      <BannerSection />
+      <CustomerReview />
+      <WhyChooseUs />
+    </div>
   );
 }

@@ -65,6 +65,9 @@ dependencies:
   react-slick:
     specifier: ^0.29.0
     version: 0.29.0(react-dom@18.2.0)(react@18.2.0)
+  react-social-icons:
+    specifier: ^6.4.0
+    version: 6.4.0(react-dom@18.2.0)(react@18.2.0)
   select:
     specifier: ^1.1.2
     version: 1.1.2
@@ -349,6 +352,13 @@ packages:
     engines: {node: '>=6.9.0'}
     dependencies:
       regenerator-runtime: 0.13.11
+
+  /@babel/runtime@7.23.1:
+    resolution: {integrity: sha512-hC2v6p8ZSI/W0HUzh3V8C5g+NwSKzKPtJwSpTjwl0o297GP9+ZLQSkdvHz46CM3LqyoXxq+5G9komY+eSqSO0g==}
+    engines: {node: '>=6.9.0'}
+    dependencies:
+      regenerator-runtime: 0.14.0
+    dev: false
 
   /@babel/template@7.22.15:
     resolution: {integrity: sha512-QPErUVm4uyJa60rkI73qneDacvdvzxshT3kksGqlGWYdOTIUOwJ7RDUL8sGqslY1uXWSL6xMFKEXDS3ox2uF0w==}
@@ -3612,6 +3622,17 @@ packages:
       resize-observer-polyfill: 1.5.1
     dev: false
 
+  /react-social-icons@6.4.0(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-8kLSp7yWB4GjWk9mDZc+u7qAkAF5lxuWLnolwRQ7KoUgQfjnxpFcuSSyda/Klt+HkqtFMiOJ+/Qtgq73vwc6BQ==}
+    peerDependencies:
+      react: 15.x.x || 16.x.x || 17.x.x || 18.x.x
+      react-dom: 15.x.x || 16.x.x || 17.x.x || 18.x.x
+    dependencies:
+      '@babel/runtime': 7.23.1
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+    dev: false
+
   /react@18.2.0:
     resolution: {integrity: sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ==}
     engines: {node: '>=0.10.0'}
@@ -3662,6 +3683,10 @@ packages:
 
   /regenerator-runtime@0.13.11:
     resolution: {integrity: sha512-kY1AZVr2Ra+t+piVaJ4gxaFaReZVH40AKNo7UCX6W+dEwBo/2oZJzqfuN1qLq1oL45o56cPaTXELwrTh8Fpggg==}
+
+  /regenerator-runtime@0.14.0:
+    resolution: {integrity: sha512-srw17NI0TUWHuGa5CFGGmhfNIeja30WMBfbslPNhf6JrqQlLN5gcrvig1oqPxiVaXb0oW0XRKtH6Nngs5lKCIA==}
+    dev: false
 
   /regexp-tree@0.1.27:
     resolution: {integrity: sha512-iETxpjK6YoRWJG5o6hXLwvjYAoW+FEZn9os0PD/b6AP6xQwsa/Y7lCVgIixBbUPMfhu+i2LtdeAqVTgGlQarfA==}

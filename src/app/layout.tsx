@@ -47,7 +47,7 @@ export default async function RootLayout({ children }: { children: ReactNode }) 
         <Navbar />
           <main>{children}</main>
           <Newsletter />
-          <div className='mt-[70vh] md:mt-[40vh]'>
+          <div className='mt-[60vh] md:mt-[40vh]'>
 
           <Footer/>
           </div>

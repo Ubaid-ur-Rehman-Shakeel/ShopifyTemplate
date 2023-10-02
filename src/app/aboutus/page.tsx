@@ -17,7 +17,7 @@ const AboutUs = () => {
             <div className='overflow-x-hidden'>
                 <div className="text-center">
 
-                    <h1 className='scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-4xl'>About The Company</h1>
+                    <h1 className='scroll-m-20 text-3xl font-extrabold tracking-tight lg:text-4xl'>About The Company</h1>
                     <p className='scroll-m-20 pb-2 text-1xl  tracking-tight transition-colors first:mt-0 pr-10 pl-10 pt-10'>Welcome to Urban Treasures, where style meets comfort in every step. At Urban Treasures, we're more than just a shoe company; we're a reflection of your unique urban lifestyle. Our mission is to provide you with footwear that not only looks good but also feels great. Whether you're strolling through city streets, dancing the night away, or simply running errands, our carefully crafted shoes are designed to keep you on your feet, all day and all night. With a commitment to quality, fashion-forward designs, and a touch of sophistication, Urban Treasures is your go-to destination for footwear that elevates your style and enhances your comfort. Step into a world of urban treasures, where your journey is as important as your destination.
 
                     </p>
@@ -116,7 +116,7 @@ const AboutUs = () => {
                 </div>
                 <div className='w-[100vw] h-auto bg-gray-200 items-center text-center pt-5 lg:h-auto'>
                     <h1 className="scroll-m-20 text-2xl font-extrabold tracking-tight lg:text-3xl">Can We Help You</h1>
-                    <p className="leading-7 [&:not(:first-child)]:mt-4" >Our dedicated team is here to assist you. Whether you have questions, need support, or simply want to chat, we're just a click or call away. Let us know how we can help you today.</p>
+                    <p className="leading-7 [&:not(:first-child)]:mt-4 p-5" >Our dedicated team is here to assist you. Whether you have questions, need support, or simply want to chat, we're just a click or call away. Let us know how we can help you today.</p>
 
 
                     <div className='flex justify-center pt-[6.8em]'>

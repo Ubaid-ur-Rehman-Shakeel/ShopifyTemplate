@@ -7,7 +7,7 @@ const Newsletter = () => {
     return (
         <>
 
-            <div className='absolute h-[70vh] w-[100vw] bg-gray md:h-[40vh] overflow-hidden'>
+            <div className='absolute h-auto w-[100vw] bg-gray md:h-[45vh] overflow-hidden'>
 
                 <Image className='absolute w-[100%] md:object-fill rounded-xl h-[100%] grayscale opacity-50'
                     src={"/news-letter-4.jpg"}
@@ -16,7 +16,7 @@ const Newsletter = () => {
                     sizes='100vw'
                     alt={''} />
 
-                <div className='relative md:left-[30vw] p-16'>
+                <div className='relative md:left-[30vw] p-5'>
 
                     <p className='leading-7 [&:not(:first-child)]:mt-6 p-2'>
                         <span className="h-px mx-auto bg-black border-0 m-1 rounded w-[25px] inline-block mr-2" ></span>SUBSCRIBE TO OUR NEWSLETTER</p>

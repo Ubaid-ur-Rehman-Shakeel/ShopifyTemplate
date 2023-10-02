@@ -1,30 +1,21 @@
-import { Button } from '@/components/ui/button';
-import { Carousel } from 'components/carousel';
-import { ThreeItemGrid } from 'components/grid/three-items';
-import Footer from 'components/layout/footer';
-import { Suspense } from 'react';
-
-export const runtime = 'edge';
-
-export const metadata = {
-  description: 'High-performance ecommerce store built with Next.js, Vercel, and Shopify.',
-  openGraph: {
-    type: 'website'
-  }
-};
+import BannerSection from '@/components/Banner';
+import BestSellingProducts from '@/components/bestSellingProducts';
+import WhyChooseUs from '@/components/whychooseus/index';
+import Hero from '../../@/components/Hero/hero';
+import CategorySection from '../../@/components/categorySection';
+import CustomerReview from '../../@/components/customerReview';
+import AboutUs from './about/page';
 
 export default async function HomePage() {
   return (
     <>
-      <ThreeItemGrid />
-      <Suspense>
-        <Carousel />
-        <h1 className="text-red-500">Hello World</h1>
-        <Button variant="outline">Shadcn</Button>
-        <Suspense>
-          <Footer />
-        </Suspense>
-      </Suspense>
+      <Hero />        
+        <BestSellingProducts/>
+        <CategorySection />
+        <BannerSection/>        
+        <CustomerReview />
+        <WhyChooseUs/>
+        {/* <AboutUs/> */}
     </>
   );
 }

@@ -1,8 +1,11 @@
-import Navbar from 'components/layout/navbar';
+import Navbar from '@/components/layout/navbar';
+import Footer from '@/components/layout/footer';
+
 import { ensureStartsWith } from 'lib/utils';
-import { Inter } from 'next/font/google';
+import { Poppins, Roboto } from 'next/font/google';
 import { ReactNode, Suspense } from 'react';
 import './globals.css';
+import Newsletter from '@/components/layout/newsletter';
 
 const { TWITTER_CREATOR, TWITTER_SITE, SITE_NAME } = process.env;
 const baseUrl = process.env.NEXT_PUBLIC_VERCEL_URL
@@ -31,20 +34,23 @@ export const metadata = {
     })
 };
 
-const inter = Inter({
-  subsets: ['latin'],
-  display: 'swap',
-  variable: '--font-inter'
+const roboto = Roboto({
+  weight: ['100', '300', '400', '500', '700', '900'],
+  subsets: ['latin']
 });
+
 
 export default async function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang="en" className={inter.variable}>
-      <body className="bg-neutral-50 text-black selection:bg-teal-300 dark:bg-neutral-900 dark:text-white dark:selection:bg-pink-500 dark:selection:text-white">
+    <html lang="en">
+      <body className={roboto.className}>
         <Navbar />
-        <Suspense>
           <main>{children}</main>
-        </Suspense>
+          <Newsletter/>
+          <div className='mt-[60vh] md:mt-[45vh]'>
+
+          <Footer/>
+          </div>
       </body>
     </html>
   );

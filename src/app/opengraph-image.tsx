@@ -1,7 +1,9 @@
-import OpengraphImage from 'components/opengraph-image';
+import React from 'react'
 
-export const runtime = 'edge';
-
-export default async function Image() {
-  return await OpengraphImage();
+function opengraphimage() {
+  return (
+    <div>opengraph-image</div>
+  )
 }
+
+export default opengraphimage

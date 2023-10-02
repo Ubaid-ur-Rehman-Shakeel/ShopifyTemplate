@@ -24,3 +24,15 @@
 .home-banner {
   background-image: url('/public/home-banner.jpg');
 } */
+
+@layer components{
+  .team-card{
+    
+      @apply w-[250px] h-auto md:w-[200px]  lg:w-[300px];
+      @apply  hover:bg-slate-100 hover:shadow-lg hover:scale-105;
+      @apply  flex flex-col justify-center items-center;
+  }
+  .team-card-img{
+    @apply block mx-auto sm:mx-0 sm:shrink-0 object-cover rounded-full h-[100px] w-[100px];
+  }
+}

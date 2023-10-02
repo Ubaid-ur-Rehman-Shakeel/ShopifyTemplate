@@ -27,7 +27,7 @@ module.exports = {
     extend: {
       colors: {
         black: "#000000",
-        white: "#fffff",
+        white: "#ffffff",
         gray: '#D3D3D3', //edited by rizwan
         // subsec: '#D8D8D8',
       },

@@ -5,6 +5,7 @@ import { ensureStartsWith } from 'lib/utils';
 import { Poppins, Roboto } from 'next/font/google';
 import { ReactNode, Suspense } from 'react';
 import './globals.css';
+import Newsletter from '@/components/layout/newsletter';
 
 const { TWITTER_CREATOR, TWITTER_SITE, SITE_NAME } = process.env;
 const baseUrl = process.env.NEXT_PUBLIC_VERCEL_URL
@@ -44,9 +45,12 @@ export default async function RootLayout({ children }: { children: ReactNode }) 
     <html lang="en">
       <body className={roboto.className}>
         <Navbar />
+          <main>{children}</main>
+          <Newsletter/>
+          <div className='mt-[60vh] md:mt-[45vh]'>
 
-        <main className='w-full max-w-[1600px] mx-auto'>{children}</main>
-        <Footer />
+          <Footer/>
+          </div>
       </body>
     </html>
   );

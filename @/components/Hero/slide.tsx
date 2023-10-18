@@ -22,9 +22,9 @@ interface propsType {
 
 export default function Slide({ image, showButton, showText, buttonText, buttonStyle, buttonLink, text, headingStyle, textStyle, sectionStyle, heading }: propsType) {
     return (
-        <div className="relative w-[100vw] h-[40vh] md:h-[80vh]">
+        <div className="relative bg-black/40 w-[100vw] h-[40vh] md:h-[80vh]">
             <Image
-                className="w-[100%] md:object-fill rounded-xl h-[100%] "
+                className="w-[100%] md:object-fill rounded-xl h-[100%] bg-opacity-50"
                 src={image}
                 alt="banner"
                 sizes='100vw'
@@ -44,7 +44,7 @@ export default function Slide({ image, showButton, showText, buttonText, buttonS
                     </p>
                 </div>)}
                 {showButton && (
-                    <Button variant={"outline"} className={buttonStyle}>
+                    <Button  className={"w-36  py-4 px-8 text-base  leading-none bg-black text-[#ffffff] font-semibold cursor-pointer hover:bg-black/60 mx-10 my-5  "} >
                         <Link href={`${buttonLink}`}>{buttonText}</Link>
                     </Button>
                 )}

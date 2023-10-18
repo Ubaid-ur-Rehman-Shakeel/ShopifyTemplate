@@ -1,7 +1,7 @@
 'use client';
 
 import { ArrowLeftIcon, ArrowRightIcon } from '@heroicons/react/24/outline';
-import { GridTileImage } from 'components/grid/tile';
+// import { GridTileImage } from '@/components/grid/tile';
 import { createUrl } from 'lib/utils';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -28,7 +28,7 @@ export function Gallery({ images }: { images: { src: string; altText: string }[]
 
   return (
     <>
-      <div className="relative aspect-square h-full max-h-[550px] w-full overflow-hidden">
+      <div id="products"  className="relative aspect-square h-full max-h-[550px] w-full overflow-hidden">
         {images[imageIndex] && (
           <Image
             className="h-full w-full object-contain"
@@ -81,13 +81,13 @@ export function Gallery({ images }: { images: { src: string; altText: string }[]
                   scroll={false}
                   className="h-full w-full"
                 >
-                  <GridTileImage
+                  {/* <GridTileImage
                     alt={image.altText}
                     src={image.src}
                     width={80}
                     height={80}
                     active={isActive}
-                  />
+                  /> */}
                 </Link>
               </li>
             );

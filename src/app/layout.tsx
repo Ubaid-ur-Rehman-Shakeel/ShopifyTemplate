@@ -26,12 +26,12 @@ export const metadata = {
   },
   ...(twitterCreator &&
     twitterSite && {
-      twitter: {
-        card: 'summary_large_image',
-        creator: twitterCreator,
-        site: twitterSite
-      }
-    })
+    twitter: {
+      card: 'summary_large_image',
+      creator: twitterCreator,
+      site: twitterSite
+    }
+  })
 };
 
 const roboto = Roboto({
